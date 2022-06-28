@@ -49,7 +49,7 @@ ul.hr {
     margin-left: 0px; /* Обнуляем значение отступов */
     padding: 4px; /* Значение полей */
    }
-   ul.hr li {
+ul.hr li {
     display: inline; /* Отображать как строчный элемент */
     margin-right: 36px; /* Отступ слева */
     padding: 3px; /* Поля вокруг текста */
@@ -185,4 +185,57 @@ ul.hr {
 
 
     color: #FFFFFF;
+}
+
+
+.steps-text{
+    margin-left: 414px;
+    margin-top: 81px;
+    margin-bottom: 0px;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+
+    /* identical to box height */
+
+    color: #F2785C;
+}
+
+.main-steps{
+display: flex;
+justify-content: space-around;
+margin-top: 40px;
+}
+
+.stepImg{
+    width: 100px;
+    height: 100px;
+    background-color: #F2785C;
+    border-radius: 16px;
+}
+
+.stepImg1{
+    width: 50px;
+    height: 50px;
+    background-color: #F2785C;
+    padding: 28px 25px 27px 25px;
+    border-radius: 16px;
+}
+
+.stepsImg2{
+    width: 100px;
+    height: 100px;
+    background-color: #F2785C;
+    padding: 28px 25px 27px 25xp;
+    border-radius: 16px;
+}
+
+.stepsImg3{
+    width: 100px;
+    height: 100px;
+    background-color: #F2785C;
+    padding: 28px 25px 27px 25xp;
+    border-radius: 16px;
 }
