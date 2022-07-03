@@ -12,7 +12,6 @@ a{
     overflow: hidden;
 }
 
-
 .allcontent{
     width: 1440px;
     display: flex;
@@ -627,10 +626,6 @@ ul.fl li {
         display: none;
     }
 
-    .destinations{
-        display: none;
-    }
-
     .stories{
         display: none;
     }
@@ -805,5 +800,57 @@ ul.fl li {
         margin-left: 0px;
         flex-direction: column;
         align-items: center;
+    }
+
+    .destinations{
+        display: flex;
+        flex-direction: column;
+        width: 390px;
+        margin-left: 0px;
+        margin-top: 16px;
+    }
+
+    .text-destination {
+        width: 176px;
+        height: 19px;
+        margin-left: 27vw;
+        margin-top: 4px;
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+
+        color: #F2785C;
+    }
+
+    .slider{
+        display: none;
+    }
+
+    .slider-indecation{
+        display: none;
+    }
+
+    .slider-mobile{
+        width: 93.4vw;
+        height: 54vw;
+        margin-top: 8px;
+        margin-left: 15px;
+         margin-right: auto;
+        background-image: url(./img/spain_mobile.jpg);
+        background-size: cover;
+    }
+
+    .mobile-slider-text{
+        margin-left: 15px;
+        margin-top: 8px;
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+
+        color: #FFFFFF;
     }
 }
