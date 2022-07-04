@@ -981,16 +981,34 @@ ul.fl li {
     }
 
     .text-small{
+        display: none;
+    }
+
+    .textSmileMobile{
         width: 196px;
-        height: 98px;
+        height: 88px;
         font-family: 'Aleo';
         font-style: normal;
         font-weight: 400;
         font-size: 9px;
         line-height: 11px;
         margin-top: 10px;
+        margin-bottom: 0px;
+        text-overflow: ellipsis;
+        overflow: hidden;
     
         color: #0D606F;
+    }
+
+    .stories-link{
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 11px;
+        margin-top: 0px;
+        color: #0D606F;
+        text-decoration: underline;
     }
     
 }
