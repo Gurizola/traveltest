@@ -626,10 +626,6 @@ ul.fl li {
         display: none;
     }
 
-    .stories{
-        display: none;
-    }
-
     .footer{
         display: none;
     }
@@ -813,7 +809,7 @@ ul.fl li {
     .text-destination {
         width: 176px;
         height: 19px;
-        margin-left: 27vw;
+        margin-left: 27.5%;
         margin-top: 4px;
         font-family: 'Red Hat Text';
         font-style: normal;
@@ -916,6 +912,87 @@ ul.fl li {
         margin-left: 1px;
     }
 
+    .stories{
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        margin-top: 8px;
+        height: auto;
+    }
+
+    .stories-text{
+        width: 118px;
+        height: 19px;
+        margin-left: auto;
+        margin-right: auto;
+    
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+    
+        color: #F2785C;
+    }
+
+    .stories-block{
+        display: flex;
+        flex-direction: column;
+        height: 628px;
+        margin-top: 0px;
+        padding-top: 0px;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(./img/bgstories.jpg);
+        background-position: top;
+        background-repeat: repeat, no-repeat;
+        background-size: auto, cover;
+    }
+
+    .imgstories{
+        display: none;
+    }
+
+    .story {
+        display: flex;
+        margin: 10px 0px 0px 15px;
+    }
+
+    .imgStoriesMobile{
+        border-radius: 16px;
+        filter: drop-shadow(0px 4px 4px #0D606F);
+    }
+
+    .storytext{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-top: 4px;
+    }
+
+    .text-header{
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 13px;
+        margin: 0px;
+    
+    
+        color: #0D606F;
+    }
+
+    .text-small{
+        width: 196px;
+        height: 98px;
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 11px;
+        margin-top: 10px;
+    
+        color: #0D606F;
+    }
+    
 }
 
 @media(max-width: 381px){
