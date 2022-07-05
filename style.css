@@ -56,11 +56,11 @@ a{
     margin: -1px 0px 0px 6px;
 }
 
-.hr ul li {
+ul.hr {
     margin-left: 0px; /* Обнуляем значение отступов */
     padding: 4px; /* Значение полей */
    }
-.hr ul li {
+ul.hr li {
     display: inline; /* Отображать как строчный элемент */
     margin-right: 36px; /* Отступ слева */
     padding: 3px; /* Поля вокруг текста */
@@ -624,21 +624,6 @@ ul.fl li {
     .menu-burger__header:before{
         border-radius: 16px;
         transform: translateY(18px);
-    }
-
-    .menu-burger__header.open-menu span {
-        opacity:0; 
-        transition: 0.5s; 
-    }
-    .menu-burger__header.open-menu:before {
-        transform: rotate(38deg);
-        top: 16px;
-        transition: 0.4s;
-    }
-    .menu-burger__header.open-menu:after {
-        transform: rotate(-38deg);
-        bottom: 16px;
-        transition: 0.4s;
     }
 
 
