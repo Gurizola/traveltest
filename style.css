@@ -594,6 +594,54 @@ ul.fl li {
 
 @media(max-width: 390px){
 
+    .menu-burger__header {
+        position: relative; /* задаем относительное позиционирование */
+        width: 26.25px; /* определяем размеры блока */
+        height: 35px;
+        display: block;
+        margin-top: 65px;
+        margin-right: 17px;
+    }
+
+    .menu-burger__header span, .menu-burger__header:after, .menu-burger__header:before{
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        background: white;
+        margin: 0 auto;
+    }
+    .menu-burger__header span{
+        top: 24px;
+        border-radius: 16px;
+    }
+    .menu-burger__header:after, .menu-burger__header:before{
+        content: '';
+    }
+    .menu-burger__header:after{
+        border-radius: 16px;
+        transform: translateY(30px);
+    }
+    .menu-burger__header:before{
+        border-radius: 16px;
+        transform: translateY(18px);
+    }
+
+
+
+
+
+
+
+
+    .nav{
+        width: 90%;
+        justify-content: end;
+        margin: 0;
+    }
+
+
+
+
     .header{
         position: relative;
         z-index: 2;
