@@ -599,6 +599,15 @@ ul.fl li {
     padding: 3px; /* Поля вокруг текста */
 }
 
+.mobile-text-botton-findmore{
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
 @media(max-width: 390px){
 
     .menu-burger__header {
@@ -1009,7 +1018,6 @@ ul.fl li {
     .story {
         display: flex;
         margin: 10px 0px 0px 15px;
-        background-image: linear-gradient(rgba(242, 120, 92, 0.7), rgba(242, 120, 92, 0.7)), url(./img/bg\ top.jpg);
     }
 
     .imgStoriesMobile{
