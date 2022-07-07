@@ -15,30 +15,30 @@
 </head>
 <body class="allcontent">
     <header class="header">
-
-        <div class="logo">
-            <img src="./img/logo.svg" alt="logo" class="logo-img">
-            <p class="logo-text">Travel Portal</p>
-        </div>
-            
-        <div class="nav">
-
-            <div class="menu-burger__header">
-                <span></span>
-            </div>
-            
-            <ul class="hr">
-                <li><a href="#preview" class="li0">How It Works</a></li>            <!--first list here-->
-                <li class="li1"><a href="#steps">Plan Your Trip</a></li>
-                <li class="li2"><a href="#destinations">Destinations</a></li>
-                <li class="li3"><a href="#stories">Travel Stories</a></li>
-            </ul>
-        </div>
-
-        <div class="button-header">
-            <button class="headerbutton">Login</button>         <!--first button-->
-        </div>
-
+            <nav class="nav__bar">
+                <img src="./logo.svg" alt="logo" class="logo">
+                <span class="name">Travel Portal </span>
+                <ul class="nav__menu">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">How It Works</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Plan Your Trip</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Destinations</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Travel Stories</a>
+                    </li>
+                </ul>
+                <div class="hamb">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <button class="nav__button">Login</button>
+            </nav>
     </header>
 
     <main class="hidden">
@@ -152,7 +152,7 @@
                             <p class="text-header">10 Photos of Attractive Thailand</p>
                         </div>
 
-                        <div class="test">
+                        <div>
                             <p class="text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint... occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <a href="#" class="stories-link"><b>Read More</b></a></p>
                             <p class="textSmileMobile">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint...</p>
                             
@@ -164,7 +164,7 @@
                 </div>
 
                 <div class="story">
-                    <div class="test">
+                    <div>
                         <img class="imgstories" src="./img/story2.jpg" alt="storyimg1">
                         <img class="imgStoriesMobile" src="./img/story2_mobile.jpg" alt="storyimg1">
                     </div>
@@ -249,5 +249,6 @@
         </ul>
 
     </footer>
+    <script type="text/javascript" src="./js.js"></script>
 </body>
 </html>

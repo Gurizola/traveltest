@@ -13,7 +13,7 @@ a{
 }
 
 .allcontent{
-    width: 1440px;
+    max-width: 1440px;
     display: flex;
     flex-direction: column;
     margin-left: auto;
@@ -23,6 +23,8 @@ a{
 
 .header{
     position: relative;
+    justify-content:end;
+    flex-shrink: 2;
     z-index: 2;
     display: flex;
     height: 64px;
@@ -33,6 +35,10 @@ a{
 .header:first-child{
     padding-left: 8.3%;
     padding-top: 1.8%;
+}
+
+.header:last-child{
+    margin-right: 10vw;
 }
 
 .logo-img{
@@ -83,13 +89,13 @@ ul.hr li {
 
 .hr{
     display: flex;
+    margin-right: 10.7vw;
 }
 
 .headerbutton{
     width: 103px;
     height: 41px;
-    margin-left: 150%;
-    margin-top: -1%;
+    margin-right: 8.3vw;
     background: #0D606F;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
     border-radius: 10px;
@@ -206,8 +212,8 @@ ul.hr li {
 
 
 .steps-text{
-    margin-left: 414px;
-    margin-top: 81px;
+    margin-left: 28.7vw;
+    margin-top: 80px;
     margin-bottom: 0px;
     font-family: 'Red Hat Text';
     font-style: normal;
@@ -387,7 +393,7 @@ ul.hr li {
 .slider-indecation{
     display: flex;
     justify-content: center;
-    margin-top: 24px;
+    margin-top: -55px;
 }
 
 .pasive-indecation{
@@ -573,7 +579,7 @@ ul.hr li {
 .textFooter{
     font-family: 'Red Hat Text';
     margin-top: 21px;
-    margin-left: 589px;
+    margin-left: 41vw;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -1058,6 +1064,12 @@ ul.fl li {
         color: #0D606F;
         text-decoration: underline;
     }
+
+    .test{
+        width: 165px;
+        height: 250px;
+        background-color: #F2785C;
+    }
     
 }
 
@@ -1074,5 +1086,170 @@ ul.fl li {
     .textSmileMobile,
     .mobile_stories-link{
         display: none;
+    }
+}
+
+
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    height: 90px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(242, 120, 92, 0.7), rgba(242, 120, 92, 0.7)), url(./bg\ top.jpg);
+    box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+}
+
+.nav__bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: end;
+    padding: 25px 8.4% 22px 0;
+}
+
+.hamb{
+    display: none;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: 0.3s;
+    background-color: white;
+}
+
+.nav__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 11.6%;
+}
+
+.nav__link{
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+}
+
+.nav__link:hover{
+    color: #0D606F;
+}
+
+.nav__logo{
+    margin: 0;
+}
+
+.nav__button{
+    width: 103px;
+    height: 41px;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+
+    background: #0D606F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    border: none;
+}
+
+.nav__item{
+    margin-right: 42px;
+}
+
+.name{
+    margin-right: 12.8%;
+    margin-bottom: 2px;
+
+    font-family: 'Magra';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+
+    color: #FFFFFF;
+}
+
+.logo{
+    margin-bottom: 9px;
+    margin-right: 6px;
+}
+
+
+@media(max-width: 390px){
+
+    .header{
+        margin-top: -90px;
+        box-shadow: 0px 43px 20px rgb(13 96 111 / 59%);
+    }
+    .nav__button{
+        display: none;
+    }
+
+    .name{
+        display: none;
+    }
+
+    .logo {
+        margin-right: 82%;
+        margin-top: 110px;
+        background-color: red;
+    }
+
+    .nav__menu{
+        position: fixed;
+        top: 30px;
+        border-radius: 10px;
+        z-index: 3;
+        flex-direction: column;
+        background-color: #F2785C;
+        width: 170px;
+        padding-left: 20px;
+        text-align: left;
+        align-items: flex-start;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.25);
+        right: -240px;
+        
+    }
+
+    .nav__menu.active{
+        right: -35px;
+        top: 30px;
+    }
+
+    .nav__item{
+        margin: 2px 0;
+    }
+
+    .hamb{
+        display: block;
+        margin-right: -2%;
+        cursor: pointer;
+        z-index: 4;
+        margin-top: 100px;
+        background-color: #F2785C;
     }
 }
