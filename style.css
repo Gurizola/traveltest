@@ -1221,9 +1221,8 @@ a{
     }
 
     .logo {
-        margin-right: 82%;
-        margin-top: 110px;
-        background-color: red;
+        margin-right: 86%;
+        margin-top: 218px;
     }
 
     .nav__menu{
@@ -1257,7 +1256,6 @@ a{
         margin-right: -2%;
         cursor: pointer;
         z-index: 4;
-        margin-top: 100px;
-        background-color: #F2785C;
+        margin-top: 207px;
     }
 }
