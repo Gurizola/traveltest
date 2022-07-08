@@ -420,7 +420,6 @@ ul.hr li {
 
 .botton-findmore{
     display: flex;
-    z-index: 4;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -1266,8 +1265,9 @@ a{
 
     .hamb.active{
         display: block;
+        position: fixed;
         transition: 0.3s;
-        margin-right: 30%;
+        margin-right: 28%;
         cursor: pointer;
         z-index: 4;
         margin-top: 207px;
@@ -1284,4 +1284,5 @@ a{
     .hamb.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
+
 }
