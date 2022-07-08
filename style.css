@@ -1013,6 +1013,10 @@ ul.fl li {
         display: none;
     }
 
+    .botton-seemore{
+        display: none;
+    }
+
     .story {
         display: flex;
         margin: 10px 0px 0px 15px;
