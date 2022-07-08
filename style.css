@@ -93,6 +93,10 @@ ul.hr li {
     margin-right: 10.7vw;
 }
 
+.nav__item-mobile{
+    display: none;
+}
+
 .headerbutton{
     width: 103px;
     height: 41px;
@@ -647,21 +651,16 @@ ul.fl li {
         transform: translateY(18px);
     }
 
-
-
-
-
-
-
-
     .nav{
         width: 90%;
         justify-content: end;
         margin: 0;
     }
 
-
-
+    .nav__item-mobile{
+        display: block;
+        margin: 7px 0;
+    }
 
     .header{
         position: relative;
@@ -1227,35 +1226,62 @@ a{
 
     .nav__menu{
         position: fixed;
+        padding-right: 15px;
+        margin-top: 9px;
         top: 30px;
         border-radius: 10px;
         z-index: 3;
         flex-direction: column;
         background-color: #F2785C;
         width: 170px;
-        padding-left: 20px;
+        padding-left: 8px;
         text-align: left;
-        align-items: flex-start;
+        align-items: flex-end;
         transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.25);
-        right: -240px;
-        
+        box-shadow: 0 10px 27px rgb(0 0 0 / 25%);
+        right: -252px;
     }
+        
 
     .nav__menu.active{
-        right: -35px;
+        right: -46px;
+        width: 150px;
         top: 30px;
+        padding-top: 35px;
+        padding-bottom: 5px;
     }
 
     .nav__item{
-        margin: 2px 0;
+        margin: 7px 0;
     }
 
     .hamb{
         display: block;
+        transition: 0.3s;
         margin-right: -2%;
         cursor: pointer;
         z-index: 4;
         margin-top: 207px;
+    }
+
+    .hamb.active{
+        display: block;
+        transition: 0.3s;
+        margin-right: 30%;
+        cursor: pointer;
+        z-index: 4;
+        margin-top: 207px;
+    }
+
+    .hamb.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamb.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamb.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
     }
 }
