@@ -688,7 +688,16 @@ ul.fl li {
         display: none;
     }
 
-    .footer{
+    .footer {
+        display: flex;
+        justify-content: center;
+        background-image: url(./img/bgstories.jpg);
+        background-repeat: no-repeat;
+        background-position: center -627px;
+        height: 61px;
+    }
+
+    .textFooter{
         display: none;
     }
 
