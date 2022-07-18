@@ -1368,6 +1368,7 @@ a{
     max-height: 660px;
     padding: 30px;
     position: relative;
+    border-radius: 16px;
 }
 
 .login__popup__close{
