@@ -1653,3 +1653,11 @@ a{
 .sign__up__input__block{
     margin-top: 29px;
 }
+
+.popup__close{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
