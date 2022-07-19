@@ -33,7 +33,7 @@
                             <a href="#stories" class="nav__link">Travel Stories</a>
                         </li>
                         <li class="nav__item-mobile">
-                            <a href="#login__popup" class="nav__link popup-lonk">Account</a>
+                            <a href="#login__popup" class="nav__link popup-link">Account</a>
                         </li>
                         <li class="nav__item-mobile">
                             <a href="#" class="nav__link">Social Media</a>
@@ -44,7 +44,7 @@
                         <span class="bar"></span>
                         <span class="bar"></span>
                     </div>
-                    <button class="nav__button popup-lonk" onclick="document.location='#login__popup'">Login</button>
+                    <button class="nav__button popup-link" onclick="document.location='#login__popup'">Login</button>
                 </nav>
         </header>
 
@@ -264,19 +264,33 @@
             <div class="login__popup__content">
                 <a href="#" class="login__popup__close">X</a>
                 <div class="login__popup__title">Log in to your account</div>
-                <button class="fb__button popup-lonk" onclick="document.location='#popup'"><img src="./img/Facebook Logo.png" alt="fblogo">Sign In with Facebook</button>
-                <button class="google__button popup-lonk" onclick="document.location='#popup'"><img src="./img/Google Logo.png" alt="googlelogo">Sign In with Google</button>
+                <button class="fb__button" onclick="document.location='#popup'"><img src="./img/Facebook Logo.png" alt="fblogo">Sign In with Facebook</button>
+                <button class="google__button" onclick="document.location='#popup'"><img src="./img/Google Logo.png" alt="googlelogo">Sign In with Google</button>
                 <div class="login__popup__line">
                     <div class="login__popup__border"></div>
                     <div>or</div>
                     <div class="login__popup__border"></div>
                 </div>
-                <div class="login__popup__text">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente perspiciatis maiores pariatur, aliquid tempore deleniti, 
-                    tenetur omnis nesciunt maxime accusamus odit quidem. Voluptates odit, quas sed explicabo delectus dolorem? Maxime.
+                <div class="input__block">
+                    <div class="popup__input">
+                        <p class="popup__input__text">E-mail</p>
+                        <input type="email" name="E-mail" id="" class="popup__input__window">
+                    </div>
+                    <div class="popup__input">
+                        <p class="popup__input__text">Password</p>
+                        <input type="password" name="Password" id="" class="popup__input__window">
+                    </div>
+                    <button class="sign__button" onclick="document.location='#popup'">Sign In</button>
+                    <div class="Forgot__Your__Password"><a href="#" class="Link_Forgot__Your__Password">Forgot Your Password?</a></div>
+                    <div class="long__line"></div>
+                    <div class="register__popup"><p>Don't have an account? <a href="#" class="Link_Forgot__Your__Password popup-link">Register</a></p></div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div id="login__popup" class="login__popup">
+        
     </div>
 
     <script type="text/javascript" src="./js.js"></script>
